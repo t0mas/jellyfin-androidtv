@@ -12,7 +12,6 @@ import android.view.WindowManager;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.acra.config.CoreConfiguration;
 import org.jellyfin.androidtv.R;
 import org.jellyfin.androidtv.auth.repository.UserRepository;
 import org.jellyfin.androidtv.constant.Codec;
@@ -55,7 +54,6 @@ import org.jellyfin.sdk.model.api.PlayAccess;
 import org.koin.java.KoinJavaComponent;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import kotlin.Lazy;
@@ -608,7 +606,7 @@ public class PlaybackController implements PlaybackControllerNotifiable {
             codecs.add(Codec.Audio.DTS);
         }
 
-        if(userPreferences.getValue().get(UserPreferences.Companion.getThdEnabled())) {
+        if(userPreferences.getValue().get(UserPreferences.Companion.getTrueHdEnabled())) {
             codecs.add(Codec.Audio.TRUEHD);
         }
 
@@ -634,7 +632,7 @@ public class PlaybackController implements PlaybackControllerNotifiable {
             case AUTO:
                 String[] directPlayCodecs = getDirectPlayPreferences();
                 // If any codecs are enabled, return those
-                if(directPlayCodecs.length > 0) return directPlayCodecs;
+                if (directPlayCodecs.length > 0) return directPlayCodecs;
                 // Otherwise fallback to MP3
                 return new String[]{ Codec.Audio.MP3 };
             case AAC:

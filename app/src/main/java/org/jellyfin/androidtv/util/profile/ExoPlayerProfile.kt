@@ -28,9 +28,9 @@ import org.jellyfin.apiclient.model.dlna.TranscodingProfile
 class ExoPlayerProfile(
 	context: Context,
 	disableVideoDirectPlay: Boolean = false,
-	audioDirectPlayCodecs : Array<String>,
-	audioTranscodeTarget : Array<String>,
-	enable4KSupport : Boolean
+	audioDirectPlayCodecs: Array<String>,
+	audioTranscodeTarget: Array<String>,
+	enable4KSupport: Boolean
 ) : DeviceProfile() {
 	private val downmixSupportedAudioCodecs = arrayOf(
 		Codec.Audio.AAC,

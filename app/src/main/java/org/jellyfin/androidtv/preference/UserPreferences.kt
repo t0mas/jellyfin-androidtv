@@ -104,7 +104,7 @@ class UserPreferences(context: Context) : SharedPreferenceStore(
 		/**
 		 * Enable 4k codecs for direct play and transcode target
 		 */
-		var enable4kSupport = booleanPreference("pref_enable_4k_support", DeviceUtils.has4kVideoSupport())
+		var enable4kSupport = booleanPreference("enable_4k_support", DeviceUtils.has4kVideoSupport())
 
 		/* Playback - Audio related */
 		/**
@@ -120,17 +120,17 @@ class UserPreferences(context: Context) : SharedPreferenceStore(
 		/**
 		 * Enable mp2/mp3
 		 */
-		var mpegEnabled = booleanPreference("pref_bitstream_mpeg", true)
+		var mpegEnabled = booleanPreference("bitstream_mpeg", true)
 
 		/**
 		 * Enable PCM
 		 */
-		var pcmEnabled = booleanPreference("pref_bitstream_pcm", true)
+		var pcmEnabled = booleanPreference("bitstream_pcm", true)
 
 		/**
 		 * Enable AAC
 		 */
-		var aacEnabled = booleanPreference("pref_bitstream_aac", true)
+		var aacEnabled = booleanPreference("bitstream_aac", true)
 
 		/**
 		 * Enable DTS
@@ -145,17 +145,17 @@ class UserPreferences(context: Context) : SharedPreferenceStore(
 		/**
 		 * Enable EAC3
 		 */
-		var eac3Enabled = booleanPreference("pref_bitstream_eac3", !DeviceUtils.isFireTvStickGen1)
+		var eac3Enabled = booleanPreference("bitstream_eac3", !DeviceUtils.isFireTvStickGen1)
 
 		/**
-		 * Enable TrueUD
+		 * Enable TrueHD
 		 */
-		var thdEnabled = booleanPreference("pref_bitstream_thd", false)
+		var trueHdEnabled = booleanPreference("bitstream_truehd", false)
 
 		/**
 		 * Enable Other
 		 */
-		var otherAudioEnabled = booleanPreference("pref_bitstream_other_audio", false)
+		var otherAudioEnabled = booleanPreference("bitstream_other_audio", false)
 
 		/**
 		 * Preferred audio transcode target codec
