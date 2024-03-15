@@ -8,8 +8,8 @@
     <string name="byletter_letters">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
     <string name="pref_playback">Playback</string>
     <string name="pref_max_bitrate_title">Max streaming bitrate</string>
-    <string name="pref_enable_4k_support">Enable 4k playback</string>
-    <string name="pref_enable_4k_support_description">Allow device to receive 4k streams</string>
+    <string name="enable_4k_support">Enable 4k playback</string>
+    <string name="enable_4k_support_description">Allow device to receive 4k streams</string>
     <string name="settings_title">Preferences</string>
     <string name="pref_authentication_cat">Authentication</string>
     <string name="chapters">Chapters</string>
@@ -177,7 +177,7 @@
     <string name="msg_item_added">" item added"</string>
     <string name="desc_automatic_fav_songs">Automatic playlist of favorite songs</string>
     <string name="lbl_new_premieres">New premieres</string>
-    <string name="pref_audio_directplay">Direct Play Audio Codecs</string>
+    <string name="pref_audio_directplay">Direct play audio codecs</string>
     <string name="lbl_codec_mpeg">MP2/MP3</string>
     <string name="lbl_codec_pcm">PCM</string>
     <string name="lbl_codec_aac">AAC</string>

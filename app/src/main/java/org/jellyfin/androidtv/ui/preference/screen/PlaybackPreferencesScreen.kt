@@ -110,8 +110,8 @@ class PlaybackPreferencesScreen : OptionsFragment() {
 			}
 
 			checkbox {
-				setTitle(R.string.pref_enable_4k_support)
-				setContent(R.string.pref_enable_4k_support_description)
+				setTitle(R.string.enable_4k_support)
+				setContent(R.string.enable_4k_support_description)
 				bind(userPreferences, UserPreferences.enable4kSupport)
 			}
 		}
@@ -251,7 +251,7 @@ class PlaybackPreferencesScreen : OptionsFragment() {
 			checkbox {
 				setTitle(R.string.lbl_codec_thd)
 				setContent(R.string.desc_bitstream_generic)
-				bind(userPreferences, UserPreferences.thdEnabled)
+				bind(userPreferences, UserPreferences.trueHdEnabled)
 				depends { userPreferences[UserPreferences.videoPlayer] != PreferredVideoPlayer.EXTERNAL }
 			}
 
